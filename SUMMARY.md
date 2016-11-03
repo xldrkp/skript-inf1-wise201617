@@ -1,0 +1,24 @@
+# Summary
+
+## Allgemeines
+* [Über diese Veranstaltung](README.md)
+* [Konzept der Veranstaltung](allgemeines/konzept.md)
+* [Ziele und Inhalte](allgemeines/veranstaltungsziele.md)
+* [Prüfung](allgemeines/pruefung.md)
+
+## Voraussetzungen
+* [Das Werkzeug](voraussetzungen/werkzeug.md)
+* [Mailadresse](voraussetzungen/mailadresse.md)
+* [GitHub-Account](voraussetzungen/github-account.md)
+* [TU-Account](voraussetzungen/tuaccount.md)
+* [Hypothes.is-Account](voraussetzungen/hypothesis.md)
+* [Zotero-Account](voraussetzungen/zoteroaccount.md)
+* [Bibliotheksausweis](voraussetzungen/tubausweis.md)
+* [Eigener Rechner](voraussetzungen/rechner.md)
+* [Software](voraussetzungen/software.md)
+* [Zusammenfassung](voraussetzungen/zusammenfassung.md)
+
+## Sitzungen
+* [Fr, 04.11.2016](sitzungen/01-Fr-2016-11-04.md)
+* [Sa, 05.11.2016](sitzungen/02-Sa-2016-11-05.md)
+* [Fr, 11.11.2016](sitzungen/03-Fr-2016-11-11.md)

@@ -1,0 +1,20 @@
+{
+  "styles": {
+    "website": "./styles/website.css"
+  },
+  "language": "de",
+  "pluginsConfig": {
+       "theme-default": {
+           "showLevel": true
+       },
+    "image-captions": {
+         "caption": "Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_"
+    }
+  },
+  "plugins": [
+        "image-captions", "-sharing"
+    ],
+  "pdf": {
+    "fontSize": 14
+  }
+}
