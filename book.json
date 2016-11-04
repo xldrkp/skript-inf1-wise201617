@@ -9,10 +9,14 @@
        },
     "image-captions": {
          "caption": "Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_"
+    },
+    "forkmegithub": {
+      "url": "https://github.com/xldrkp/skript-inf1-wise201617",
+      "color": "red"
     }
   },
   "plugins": [
-        "image-captions", "-sharing"
+        "image-captions", "-sharing", "forkmegithub"
     ],
   "pdf": {
     "fontSize": 14
