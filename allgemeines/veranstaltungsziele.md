@@ -9,5 +9,5 @@ Dort sind zum einen Qualifikationsziele angegeben, die sich über die beiden Ver
 Beschäftigen Sie sich mit den FSB insofern, als dass Sie
 
 * Ihre Vorkenntnisse mit den Anforderungen in Beziehung setzen. Was können und kennen Sie schon?
-* unbekannte Begriffe recherchieren und sich ein grobes Verständnis von seiner Bedeutung erarbeiten
-* die Prüfungsformen zur Kenntnis nehmen und sich überlegen, was das für Ihre individuelle Vorbereitung bedeutet
+* unbekannte Begriffe recherchieren und sich ein grobes Verständnis von ihrer Bedeutung erarbeiten
+* die [Prüfungsformen](./pruefung.md) zur Kenntnis nehmen und sich überlegen, was das für Ihre individuelle Vorbereitung bedeutet
