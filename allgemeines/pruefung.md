@@ -1,4 +1,4 @@
-e# Prüfungsformen und -voraussetzungen
+# Prüfungsformen und -voraussetzungen
 
 ## Prüfungsformen
 
