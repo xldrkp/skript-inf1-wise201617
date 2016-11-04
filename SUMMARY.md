@@ -22,3 +22,15 @@
 * [Fr, 04.11.2016](sitzungen/01-Fr-2016-11-04.md)
 * [Sa, 05.11.2016](sitzungen/02-Sa-2016-11-05.md)
 * [Fr, 11.11.2016](sitzungen/03-Fr-2016-11-11.md)
+
+---
+
+## Material
+
+* [Webtechnologien](material/webtechnologien.md)
+    * [HTML5](material/html5.md)
+    * [CSS3](material/css3.md)
+
+## Literatur
+
+* [Bücher](material/buecher.md)
