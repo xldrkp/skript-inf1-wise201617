@@ -1,5 +1,9 @@
 figure {
-  text-align: center;
+  /*text-align: center;*/
+}
+
+figcaption {
+  text-align: left;
 }
 
 /* GitHub Fork Ribbon */

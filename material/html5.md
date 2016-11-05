@@ -18,6 +18,7 @@ HTML5 kann man mit jedem Texteditor notieren, als `dateiname.html` speichern und
 
 * Eine aktuelle deutschsprachige Website, die auch Stilfragen und gute Praxis vermittelt, ist das [HTML-Seminar](http://www.html-seminar.de/einsteiger.htm) von Axel Pratzner.
 * Auf dieser Seite ist besonders [der Vergleich zwischen der "althergebrachten Art" und der neuen zu erwähnen](http://www.html-seminar.de/html-5-strukturierende-elemente.htm), mit der Webseiten strukturiert werden.
+* Die W3School hat [viele Lerneinheiten](http://www.w3schools.com/html/html5_intro.asp) zu aktuellen Sprachen des Webs. 
 
 ### Videos
 
