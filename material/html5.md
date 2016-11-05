@@ -10,9 +10,14 @@ Wer das WWW mitgestalten will, kommt an HTML nicht vorbei. HTML5 ist die aktuell
 
 HTML5 kann man mit jedem Texteditor notieren, als `dateiname.html` speichern und dann als Dokument im Browser öffnen. Wir werden in der Veranstaltung [Atom](http://atom.io) verwenden, einen Editor, der unter der [MIT Lizenz](https://github.com/atom/atom/blob/master/LICENSE.md) veröffentlicht wurde und damit als [Freie Software gilt](https://www.gnu.org/licenses/license-list#X11License).
 
+### Referenzen
+
+* Ein sehr guter Anlaufpunkt in Sachen Referenz und Dokumentation ist das **Mozilla Developer Framework**. Hier gibt es mittlerweile viel zu [CSS](https://developer.mozilla.org/de/docs/Web/HTML) in deutscher Sprache. Jedoch gilt auch hier, dass die englische Version hinsichtlich Aktualität und Vollständigkeit der deutschen vorzuziehen ist.
+
 ### Webseiten und Tutorials
 
 * Eine aktuelle deutschsprachige Website, die auch Stilfragen und gute Praxis vermittelt, ist das [HTML-Seminar](http://www.html-seminar.de/einsteiger.htm) von Axel Pratzner.
+* Auf dieser Seite ist besonders [der Vergleich zwischen der "althergebrachten Art" und der neuen zu erwähnen](http://www.html-seminar.de/html-5-strukturierende-elemente.htm), mit der Webseiten strukturiert werden.
 
 ### Videos
 
