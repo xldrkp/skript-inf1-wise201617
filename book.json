@@ -13,10 +13,15 @@
     "forkmegithub": {
       "url": "https://github.com/xldrkp/skript-inf1-wise201617",
       "color": "red"
+    },
+    "downloadpdf": {
+      "base": "https://github.com/xldrkp/skript-inf1-wise201617/blob/master/book.pdf",
+      "label": "Download PDF",
+      "multilingual": false
     }
   },
   "plugins": [
-        "image-captions", "-sharing", "forkmegithub"
+        "image-captions", "-sharing", "forkmegithub", "downloadpdf"
     ],
   "pdf": {
     "fontSize": 14
