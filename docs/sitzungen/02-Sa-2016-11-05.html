@@ -418,6 +418,21 @@
             
         </li>
     
+        <li class="chapter " data-level="4.2" data-path="../material/atom.html">
+            
+                <a href="../material/atom.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Atom
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -496,6 +511,21 @@
 </ul>
 <h2 id="inhalte">Inhalte</h2>
 <p>Die Doppelsitzung gibt uns die M&#xF6;glichkeit, den eigenen Rechner f&#xFC;r die Entwicklung mit HTML und CSS einzurichten. Anschlie&#xDF;end werden wir erste einfache HTML-Dokumente entwickeln und miteinander verlinken. Dabei nutzen wir <a href="https://atom.io/" target="_blank">Atom</a> als Entwicklungsumgebung und <a href="https://www.chromium.org/Home" target="_blank">Chromium</a> als Entwicklungbrowser.</p>
+<h3 id="angesprochene-themen-in-der-sitzung">Angesprochene Themen in der Sitzung</h3>
+<p>In der Sitzung wurden im Gespr&#xE4;ch mit den Studierenden weitere Themen aufgeworfen:</p>
+<ul>
+<li><a href="https://owncloud.org/" target="_blank">Owncloud</a>/<a href="https://nextcloud.com/" target="_blank">NextCloud</a> als Alternative zu Dropbox</li>
+<li>Email-Verschl&#xFC;sselung</li>
+<li>Suchmaschinenoptimierung (SEO)</li>
+<li>Encoding/Decoding von Zeichen<ul>
+<li><a href="http://www.asciitable.com/" target="_blank">ASCII-Tabelle</a></li>
+<li><a href="ww.w3schools.com/tags/att_meta_charset.asp">UTF-8</a></li>
+</ul>
+</li>
+<li><a href="https://de.wikipedia.org/wiki/Obsoleszenz" target="_blank">Obsoleszenz</a> bei technischen Ger&#xE4;ten und Software am Beispiel von Apples Softwareupdates</li>
+<li>Anonymes Browsen mit <a href="https://www.torproject.org/" target="_blank">TOR</a> und <a href="https://tails.boum.org/" target="_blank">Tails</a></li>
+<li>K&#xFC;nstliche Intelligenz (KI), auf Englisch Artificial Intelligence (AI)</li>
+</ul>
 <h2 id="auftrag">Auftrag</h2>
 <p>Entwickeln Sie eine Webpr&#xE4;senz bestehend aus mindestens zwei HTML-Dokumenten. Das Thema k&#xF6;nnen Sie frei w&#xE4;hlen. Es darf auch humorvoll und spielerisch sein.</p>
 <h3 id="startseite">Startseite</h3>
@@ -516,10 +546,156 @@
 <li>Verlinkung zur&#xFC;ck zur Homepage</li>
 </ul>
 <p>Machen Sie sich um das gegenw&#xE4;rtige Aussehen nicht zuviel Sorgen. Als n&#xE4;chstes besch&#xE4;ftigen wir uns mit CSS zur Formatierung der Inhalte.</p>
+<h2 id="entwickeltes-htmlcss-konstrukt-aus-der-veranstaltung">Entwickeltes HTML/CSS-Konstrukt aus der Veranstaltung</h2>
+<p>Zum Kennenlernen HTML und CSS haben wir gemeinsam folgendes Konstrukt entwickelt, das ich im Anschluss an die Veranstaltung nochmal &#xFC;berarbeitet und kommentiert habe.</p>
+<p><em>Snippet</em>: <code>index.html</code></p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>HTML lernen ohne Br&#xF6;tchen<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Notwendig, damit der Browser Umlaute korrekt anzeigt. --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;style.css&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://placekitten.com/700/104&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+      <span class="hljs-comment">&lt;!--Hier steht ein Kommentar.--&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>HTML lernen ohne Br&#xF6;tchen<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://pro-linux.de&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span>Hund<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Katze<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Maus<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Beispiel f&#xFC;r die Anwendung einer CSS-ID --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;first-paragraph&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>commodo<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- Beispiel f&#xFC;r Inline CSS --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: red;&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- Beispiel f&#xFC;r die Anwendung einer CSS-Klasse --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ausgezeichnet&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ausgezeichnet&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ausgezeichnet&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://placekitten.com/600/600&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://placekitten.com/60/60&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;S&#xFC;&#xDF;e Katze, niedlich.&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>links oben<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>rechts oben<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>links unten<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>rechts unten<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p><em>Snippet: <code>style.css</code></em></p>
+<pre><code class="lang-css"><span class="hljs-comment">/*
+Die folgenden Farben wurden aus dem Headerbild errechnet. Der genutzte Service ist http://www.lavishbootstrap.com/?utf8=%E2%9C%93&amp;image_url=http%3A%2F%2Fplacekitten.com%2F700%2F104&amp;commit=Go+Lavish
+F&#xFC;r Menschen, die keine Gestalter_innen sind, kann so ein Tool helfen, ein stimmiges Design zu erarbeiten.
+
+Background: #AEAFAD
+Text: #A18C70
+Headlines: #24251C
+Links: #7B8183
+Besuchte Links: #8A755B
+*/</span>
+
+
+<span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#AEAFAD</span>;
+}
+
+<span class="hljs-comment">/* &quot;Wickel&quot; um den Inhalt, der weitere Formatierungsm&#xF6;glichkeiten bietet.
+So kann n&#xE4;mlich die Farbe des Hintergrund hinter dem Inhalt anders gew&#xE4;hlt werden, als die Hintergrundfarbe des gesamten sichtbaren Bereichs (s. body-Formatierung) */</span>
+<span class="hljs-selector-id">#wrapper</span> {
+  <span class="hljs-comment">/* beschr&#xE4;nkt die Breite des Inhaltsbereichs */</span>
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">700px</span>;
+  <span class="hljs-comment">/* positioniert den schmalen Inhalt immer mittig im Browser*/</span>
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#ddd</span>;
+  <span class="hljs-comment">/* Damit der Innenabstand vom Padding nicht der Breite des Wrapper zugeschlagen wird: */</span>
+  <span class="hljs-attribute">box-sizing</span>: border-box;
+  <span class="hljs-comment">/* Runde Ecken */</span>
+  <span class="hljs-comment">/*border-radius: 8px;*/</span>
+}
+
+<span class="hljs-comment">/* Innerer Wickel, um den Innenabstand setzen zu k&#xF6;nnen */</span>
+<span class="hljs-selector-id">#content</span> {
+  <span class="hljs-comment">/* Innenabstand von den Inhalten des Wrappers zu seinen Au&#xDF;engrenzen */</span>
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">20px</span>;
+}
+
+<span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#504834</span>;
+}
+
+<span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#7B8183</span>;
+}
+
+<span class="hljs-comment">/* Farbe f&#xFC;r besuchte Links. Die Schreibweise mit dem Doppelpunkt implementiert eine -&gt; Pseudoklasse, hier &quot;visited&quot; */</span>
+<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:visited</span> {
+  <span class="hljs-attribute">color</span>:<span class="hljs-number">#8A755B</span>;
+}
+
+<span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#A18C70</span>;
+}
+
+<span class="hljs-comment">/* Beispiel f&#xFC;r die Definition einer CSS-ID */</span>
+<span class="hljs-selector-id">#first-paragraph</span> {
+  <span class="hljs-attribute">font-style</span>: italic;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+}
+
+<span class="hljs-selector-tag">table</span> {
+  <span class="hljs-attribute">color</span>: green;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#aaa</span>;
+  <span class="hljs-attribute">border-collapse</span>: collapse;
+}
+
+<span class="hljs-selector-tag">td</span> {
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#aaa</span>;
+}
+
+<span class="hljs-comment">/* Beispiel f&#xFC;r eine CSS-Klassendefinition */</span>
+<span class="hljs-selector-class">.ausgezeichnet</span> {
+  <span class="hljs-attribute">font-weight</span>: bold;
+}
+
+<span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">25px</span>;
+}
+
+<span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">color</span>: green;
+}
+</code></pre>
 <h3 id="fertigstellung">Fertigstellung</h3>
 <p>Arbeiten Sie im Anschluss an die Veranstaltung weiter an dem Projekt und nutzen Sie die <a href="../material/html5.html">Materialien</a>, um Ihre Fertigkeiten zu erweitern.</p>
 <h3 id="abgabe">Abgabe</h3>
-<p>Sende Sie ein ZIP mit allen zugeh&#xF6;rigen Dateien bis zum <strong>17.11.2016</strong> an das Dozententeam.</p>
+<p>Senden Sie ein ZIP mit allen zugeh&#xF6;rigen Dateien bis zum <strong>17.11.2016</strong> an das Dozententeam.</p>
 
                                 
                                 </section>
@@ -563,7 +739,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Sa, 05.11.2016","level":"3.2","depth":1,"next":{"title":"Fr, 11.11.2016","level":"3.3","depth":1,"path":"sitzungen/03-Fr-2016-11-11.md","ref":"sitzungen/03-Fr-2016-11-11.md","articles":[]},"previous":{"title":"Fr, 04.11.2016","level":"3.1","depth":1,"path":"sitzungen/01-Fr-2016-11-04.md","ref":"sitzungen/01-Fr-2016-11-04.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","-sharing","forkmegithub","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"image-captions":{"caption":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"},"forkmegithub":{"color":"red","url":"https://github.com/xldrkp/skript-inf1-wise201617"},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"voraussetzungen/github-account.html#fig2.3.1","level":"2.3","list_caption":"Figure: Wie heißt dieses Tier?","alt":"Wie heißt dieses Tier?","nro":1,"url":"../assets/maskottchen.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Wie heißt dieses Tier?","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"sitzungen/02-Sa-2016-11-05.html#fig3.2.1","level":"3.2","list_caption":"Figure: Markup des Kopfteils eines HTML5-Dokuments","alt":"Markup des Kopfteils eines HTML5-Dokuments","nro":2,"url":"../assets/html5-markup.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Markup des Kopfteils eines HTML5-Dokuments","attributes":{},"skip":false,"key":"3.2.1"},{"backlink":"material/html5.html#fig4.1.1.1","level":"4.1.1","list_caption":"Figure: Offizielles HTML5-Logo","alt":"Offizielles HTML5-Logo","nro":3,"url":"https://www.w3.org/html/logo/downloads/HTML5_Badge_128.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Offizielles HTML5-Logo","attributes":{},"skip":false,"key":"4.1.1.1"},{"backlink":"material/buecher.html#fig5.1.1","level":"5.1","list_caption":"Figure: A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","alt":"A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","nro":4,"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/A_tower_of_used_books_-_8449.jpg/512px-A_tower_of_used_books_-_8449.jpg","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","attributes":{},"skip":false,"key":"5.1.1"}]},"language":"de","gitbook":"*"},"file":{"path":"sitzungen/02-Sa-2016-11-05.md","mtime":"2016-11-05T07:30:00.882Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-05T07:34:34.793Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Sa, 05.11.2016","level":"3.2","depth":1,"next":{"title":"Fr, 11.11.2016","level":"3.3","depth":1,"path":"sitzungen/03-Fr-2016-11-11.md","ref":"sitzungen/03-Fr-2016-11-11.md","articles":[]},"previous":{"title":"Fr, 04.11.2016","level":"3.1","depth":1,"path":"sitzungen/01-Fr-2016-11-04.md","ref":"sitzungen/01-Fr-2016-11-04.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","-sharing","forkmegithub","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"image-captions":{"caption":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"},"forkmegithub":{"color":"red","url":"https://github.com/xldrkp/skript-inf1-wise201617"},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"voraussetzungen/github-account.html#fig2.3.1","level":"2.3","list_caption":"Figure: Wie heißt dieses Tier?","alt":"Wie heißt dieses Tier?","nro":1,"url":"../assets/maskottchen.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Wie heißt dieses Tier?","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"sitzungen/02-Sa-2016-11-05.html#fig3.2.1","level":"3.2","list_caption":"Figure: Markup des Kopfteils eines HTML5-Dokuments","alt":"Markup des Kopfteils eines HTML5-Dokuments","nro":2,"url":"../assets/html5-markup.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Markup des Kopfteils eines HTML5-Dokuments","attributes":{},"skip":false,"key":"3.2.1"},{"backlink":"material/html5.html#fig4.1.1.1","level":"4.1.1","list_caption":"Figure: Offizielles HTML5-Logo","alt":"Offizielles HTML5-Logo","nro":3,"url":"https://www.w3.org/html/logo/downloads/HTML5_Badge_128.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Offizielles HTML5-Logo","attributes":{},"skip":false,"key":"4.1.1.1"},{"backlink":"material/atom.html#fig4.2.1","level":"4.2","list_caption":"Figure: Beispiel","alt":"Beispiel","nro":4,"url":"../assets/pigments-sample.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Beispiel","attributes":{},"skip":false,"key":"4.2.1"},{"backlink":"material/buecher.html#fig5.1.1","level":"5.1","list_caption":"Figure: A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","alt":"A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","nro":5,"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/A_tower_of_used_books_-_8449.jpg/512px-A_tower_of_used_books_-_8449.jpg","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","attributes":{},"skip":false,"key":"5.1.1"}]},"language":"de","gitbook":"*"},"file":{"path":"sitzungen/02-Sa-2016-11-05.md","mtime":"2016-11-08T08:04:52.154Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-08T08:04:19.584Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
