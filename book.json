@@ -1,18 +1,18 @@
 {
-  "styles": {
-    "website": "./styles/website.css"
-  },
   "language": "de",
+  "plugins": [
+    "image-captions", "-sharing", "forkmegithub", "downloadpdf"
+  ],
   "pluginsConfig": {
-       "theme-default": {
-           "showLevel": true
-       },
+    "theme-default": {
+      "showLevel": true
+    },
     "image-captions": {
-         "caption": "Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_"
+      "caption": "Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_"
     },
     "forkmegithub": {
       "url": "https://github.com/xldrkp/skript-inf1-wise201617",
-      "color": "red"
+        "color": "red"
     },
     "downloadpdf": {
       "base": "https://github.com/xldrkp/skript-inf1-wise201617/blob/master/book.pdf",
@@ -20,10 +20,11 @@
       "multilingual": false
     }
   },
-  "plugins": [
-        "image-captions", "-sharing", "forkmegithub", "downloadpdf"
-    ],
   "pdf": {
     "fontSize": 14
+  },
+  "styles": {
+    "website": "./styles/website.css",
+    "pdf": "./styles/pdf.css"
   }
 }
