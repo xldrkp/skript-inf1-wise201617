@@ -10,3 +10,7 @@ figcaption {
 a#forkmegithub img {
   z-index: 100000;
 }
+
+.book-summary ul.summary li a {
+  padding: 3px 15px;
+}
