@@ -4,4 +4,4 @@ Die Veranstaltung hat keine Zugangsvoraussetzungen. Allerdings brauchen wir eini
 
 ## Abgabetermin
 
-Die [kompletten Aufträge](./zusammenfassung.md) des Abschnitts *Voraussetzungen* sind bis zum Vorabend der dritten Veranstaltung (11.11.2016) zu erledigen.
+Die [kompletten Aufträge](./zusammenfassung.md) des Abschnitts *Voraussetzungen* sind bis zum ~~Vorabend der dritten Veranstaltung (11.11.2016)~~ 17.11.2016 zu erledigen.
