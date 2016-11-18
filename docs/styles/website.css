@@ -11,6 +11,7 @@ a#forkmegithub img {
   z-index: 100000;
 }
 
+/* Abstand der Gliederung */
 .book-summary ul.summary li a {
   padding: 3px 15px;
 }
