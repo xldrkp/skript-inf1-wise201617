@@ -548,32 +548,43 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="06-fr-09122016">[06] Fr., 09.12.2016</h1>
-<p>Die heutige Veranstaltung ist praktisch ausgerichtet. Wir werden Software installieren, Netzwerkadressen vergeben und unsere Dateien verschl&#xFC;sselt auf den Raspberry Pi &#xFC;bertragen</p>
+<p>Die heutige Veranstaltung ist praktisch ausgerichtet. Wir werden &quot;unser&quot; geplantes LAN aufbauen, Software installieren, manuell Netzwerkadressen vergeben und unsere Dateien verschl&#xFC;sselt auf den Raspberry Pi &#xFC;bertragen</p>
 <h2 id="ziele">Ziele</h2>
 <ul>
 <li>Dateien (HTML/CSS) auf einen Server hochladen k&#xF6;nnen</li>
-<li>HTML-Dokumente &#xFC;ber HTTP abrufen k&#xF6;nnen</li>
 </ul>
 <h2 id="inhalte">Inhalte</h2>
 <p>In der heutigen Veranstaltung werden wir</p>
 <ul>
 <li>den Raspberry Pi in Betrieb nehmen</li>
-<li>unser lokales Netzwerk konfigurieren</li>
+<li>ein lokales Netzwerk aufbauen und konfigurieren</li>
 <li>Protokolle zur Daten&#xFC;bertragung zwischen Client und Server kennenlernen und ausprobieren</li>
 <li>in die Administration eines entfernten Rechners einsteigen</li>
+<li>Daten verschl&#xFC;sselt in eigenes Benutzerverzeichnis auf dem Server hochladen</li>
 </ul>
 <h2 id="inputelemente">Inputelemente</h2>
+<h3 id="vorbereitungen">Vorbereitungen</h3>
+<ul>
+<li>Teilnehmer_innen installieren FileZilla auf ihrem eigenen Rechner</li>
+</ul>
 <h3 id="der-raspberry-pi-mit-gui">Der Raspberry Pi mit GUI</h3>
 <ul>
 <li>Vorstellung des Raspberry Pi auf der grafischen Oberfl&#xE4;che (Raspian)</li>
-<li>Anlegen von Teilnehmenden-Accounts durch den Provider (grafische Benutzeroberfl&#xE4;che)</li>
+<li>Zeigen der Konfigurationsm&#xF6;glichkeiten</li>
+<li>Anlegen von Teilnehmenden-Accounts durch den Provider</li>
 <li>Konfiguration des Raspberry Pi mit einer statischen Adresse aus einem privaten Netz (grafische Benutzeroberfl&#xE4;che)</li>
 </ul>
-<h3 id="teilnahme-am-netzwerk">Teilnahme am Netzwerk</h3>
-<ul>
-<li>Manuelle Konfiguration der Rechner der Studierenden f&#xFC;r die Teilnahme an diesem Netz</li>
-</ul>
-<h3 id="kommunikation-zwischen-client-und-server">Kommunikation zwischen Client und Server</h3>
+<pre><code>IP:         192.168.178.100
+Maske:      255.255.255.0
+Broadcast:  192.168.178.255
+Gateway:    192.168.178.1
+</code></pre><h3 id="teilnahme-am-netzwerk">Teilnahme am Netzwerk</h3>
+<p>Manuelle Konfiguration der Rechner der Studierenden f&#xFC;r die Teilnahme an diesem Netz:</p>
+<pre><code>IP:         192.168.178.[...]
+Maske:      255.255.255.0
+Broadcast:  192.168.178.255
+Gateway:    192.168.178.100
+</code></pre><h3 id="kommunikation-zwischen-client-und-server">Kommunikation zwischen Client und Server</h3>
 <ul>
 <li>Besprechung der g&#xE4;ngigen Protokolle FTP, SFTP bzw. SSH</li>
 <li>Einrichtung des Raspberry Pi mit einem SSH-Server</li>
@@ -581,7 +592,12 @@
 <li>Verwendung von FileZilla f&#xFC;r den Upload der HTML-Seiten auf den Raspberry Pi</li>
 </ul>
 <h2 id="auftrag">Auftrag</h2>
-<h2 id="ablauf-der-veranstaltung-im-r&#xFC;ckblick">Ablauf der Veranstaltung im R&#xFC;ckblick</h2>
+<p>Schreiben Sie einen Text von ca. einer Dreiviertelseite L&#xE4;nge, der folgende Punkte thematisiert:</p>
+<ul>
+<li>Aufbau unseres lokalen Netzwerks mit seinen Komponenten</li>
+<li>&#xDC;bertragung von Dateien vom Client auf den Server</li>
+</ul>
+<p>Verfassen Sie Ihren Text in HTML und verlinken Sie verwendete Fachtermini mit aussagekr&#xE4;ftigen und seri&#xF6;sen Quellen. Dabei soll sich die verlinkte Quelle in einem neuen Tab &#xF6;ffnen, wenn der Link angeklickt wird.</p>
 
                                 
                                 </section>
@@ -625,7 +641,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Fr, 09.12.2016","level":"3.6","depth":1,"next":{"title":"Webtechnologien","level":"4.1","depth":1,"path":"material/webtechnologien.md","ref":"material/webtechnologien.md","articles":[{"title":"HTML5","level":"4.1.1","depth":2,"path":"material/html5.md","ref":"material/html5.md","articles":[]},{"title":"CSS3","level":"4.1.2","depth":2,"path":"material/css3.md","ref":"material/css3.md","articles":[]}]},"previous":{"title":"Fr, 02.12.2016","level":"3.5","depth":1,"path":"sitzungen/05-Fr-2016-12-02.md","ref":"sitzungen/05-Fr-2016-12-02.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","-sharing","forkmegithub","downloadpdf","youtube"],"styles":{"website":"./styles/website.css","pdf":"./styles/pdf.css"},"pluginsConfig":{"youtube":{},"search":{},"downloadpdf":{"label":"Download PDF","multilingual":false,"base":"https://github.com/xldrkp/skript-inf1-wise201617/blob/master/book.pdf"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"forkmegithub":{"color":"red","url":"https://github.com/xldrkp/skript-inf1-wise201617"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"image-captions":{"caption":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"voraussetzungen/github-account.html#fig2.3.1","level":"2.3","list_caption":"Figure: Wie heißt dieses Tier?","alt":"Wie heißt dieses Tier?","nro":1,"url":"../assets/maskottchen.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Wie heißt dieses Tier?","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"sitzungen/02-Sa-2016-11-05.html#fig3.2.1","level":"3.2","list_caption":"Figure: Markup des Kopfteils eines HTML5-Dokuments","alt":"Markup des Kopfteils eines HTML5-Dokuments","nro":2,"url":"../assets/html5-markup.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Markup des Kopfteils eines HTML5-Dokuments","attributes":{},"skip":false,"key":"3.2.1"},{"backlink":"sitzungen/03-Fr-2016-11-18.html#fig3.3.1","level":"3.3","list_caption":"Figure: Absolut notwendig: Verständliche Navigationselemente auf Websites","alt":"Absolut notwendig: Verständliche Navigationselemente auf Websites","nro":3,"url":"/assets/wind-rose-1209398_1280.jpg","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Absolut notwendig: Verständliche Navigationselemente auf Websites","attributes":{},"skip":false,"key":"3.3.1"},{"backlink":"material/html5.html#fig4.1.1.1","level":"4.1.1","list_caption":"Figure: Offizielles HTML5-Logo","alt":"Offizielles HTML5-Logo","nro":4,"url":"https://www.w3.org/html/logo/downloads/HTML5_Badge_128.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Offizielles HTML5-Logo","attributes":{},"skip":false,"key":"4.1.1.1"},{"backlink":"material/atom.html#fig4.2.1","level":"4.2","list_caption":"Figure: Beispiel","alt":"Beispiel","nro":5,"url":"../assets/pigments-sample.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Beispiel","attributes":{},"skip":false,"key":"4.2.1"},{"backlink":"material/buecher.html#fig5.1.1","level":"5.1","list_caption":"Figure: A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","alt":"A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","nro":6,"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/A_tower_of_used_books_-_8449.jpg/512px-A_tower_of_used_books_-_8449.jpg","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","attributes":{},"skip":false,"key":"5.1.1"}]},"language":"de","gitbook":"*"},"file":{"path":"sitzungen/06-Fr-2016-12-09.md","mtime":"2016-12-05T16:38:31.407Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-05T19:31:30.282Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Fr, 09.12.2016","level":"3.6","depth":1,"next":{"title":"Webtechnologien","level":"4.1","depth":1,"path":"material/webtechnologien.md","ref":"material/webtechnologien.md","articles":[{"title":"HTML5","level":"4.1.1","depth":2,"path":"material/html5.md","ref":"material/html5.md","articles":[]},{"title":"CSS3","level":"4.1.2","depth":2,"path":"material/css3.md","ref":"material/css3.md","articles":[]}]},"previous":{"title":"Fr, 02.12.2016","level":"3.5","depth":1,"path":"sitzungen/05-Fr-2016-12-02.md","ref":"sitzungen/05-Fr-2016-12-02.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","-sharing","forkmegithub","downloadpdf","youtube"],"styles":{"website":"./styles/website.css","pdf":"./styles/pdf.css"},"pluginsConfig":{"youtube":{},"search":{},"downloadpdf":{"label":"Download PDF","multilingual":false,"base":"https://github.com/xldrkp/skript-inf1-wise201617/blob/master/book.pdf"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"forkmegithub":{"color":"red","url":"https://github.com/xldrkp/skript-inf1-wise201617"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"image-captions":{"caption":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"voraussetzungen/github-account.html#fig2.3.1","level":"2.3","list_caption":"Figure: Wie heißt dieses Tier?","alt":"Wie heißt dieses Tier?","nro":1,"url":"../assets/maskottchen.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Wie heißt dieses Tier?","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"sitzungen/02-Sa-2016-11-05.html#fig3.2.1","level":"3.2","list_caption":"Figure: Markup des Kopfteils eines HTML5-Dokuments","alt":"Markup des Kopfteils eines HTML5-Dokuments","nro":2,"url":"../assets/html5-markup.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Markup des Kopfteils eines HTML5-Dokuments","attributes":{},"skip":false,"key":"3.2.1"},{"backlink":"sitzungen/03-Fr-2016-11-18.html#fig3.3.1","level":"3.3","list_caption":"Figure: Absolut notwendig: Verständliche Navigationselemente auf Websites","alt":"Absolut notwendig: Verständliche Navigationselemente auf Websites","nro":3,"url":"/assets/wind-rose-1209398_1280.jpg","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Absolut notwendig: Verständliche Navigationselemente auf Websites","attributes":{},"skip":false,"key":"3.3.1"},{"backlink":"material/html5.html#fig4.1.1.1","level":"4.1.1","list_caption":"Figure: Offizielles HTML5-Logo","alt":"Offizielles HTML5-Logo","nro":4,"url":"https://www.w3.org/html/logo/downloads/HTML5_Badge_128.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Offizielles HTML5-Logo","attributes":{},"skip":false,"key":"4.1.1.1"},{"backlink":"material/atom.html#fig4.2.1","level":"4.2","list_caption":"Figure: Beispiel","alt":"Beispiel","nro":5,"url":"../assets/pigments-sample.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Beispiel","attributes":{},"skip":false,"key":"4.2.1"},{"backlink":"material/buecher.html#fig5.1.1","level":"5.1","list_caption":"Figure: A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","alt":"A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","nro":6,"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/A_tower_of_used_books_-_8449.jpg/512px-A_tower_of_used_books_-_8449.jpg","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","attributes":{},"skip":false,"key":"5.1.1"}]},"language":"de","gitbook":"*"},"file":{"path":"sitzungen/06-Fr-2016-12-09.md","mtime":"2016-12-09T07:12:14.965Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-09T07:12:38.785Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
