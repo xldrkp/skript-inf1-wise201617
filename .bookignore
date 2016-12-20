@@ -1,0 +1,4 @@
+.bookignore
+.gitignore
+.dockerignore
+.gitlab-ci.yml
