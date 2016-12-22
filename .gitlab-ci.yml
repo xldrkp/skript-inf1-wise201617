@@ -1,0 +1,66 @@
+stages:
+    - build
+    - review
+    - deploy
+
+build:
+    stage: build
+    only:
+        - branches
+    tags:
+        - development
+    script:
+        - gitbook install
+        - gitbook build
+
+    artifacts:
+        name: "${CI_BUILD_NAME}_${CI_BUILD_REF_NAME}"
+        paths:
+            - _book
+            
+start_review:
+    stage: review
+    script:
+        - sshpass -p "$SSH_PASSWD" ssh -p "$SSH_PORT" $SSH_USER@fizban.rz.tu-harburg.de "mkdir -p /usr/share/nginx/html/review/$CI_BUILD_REF_NAME"
+        - sshpass -p "$SSH_PASSWD" scp -P "$SSH_PORT" -r _book/* $SSH_USER@fizban.rz.tu-harburg.de:/usr/share/nginx/html/review/$CI_BUILD_REF_NAME
+    environment:
+        name: review/$CI_BUILD_REF_NAME
+        url: http://fizban.rz.tu-harburg.de:56080/review/$CI_BUILD_REF_NAME/
+        on_stop: stop_review
+    only:
+        - branches
+    tags:
+        - development
+    except:
+        - master
+    
+stop_review:
+    stage: review
+    variables:
+        GIT_STRATEGY: none
+    script:
+        - sshpass -p "$SSH_PASSWD" ssh -p "$SSH_PORT" $SSH_USER@fizban.rz.tu-harburg.de "rm -rf /usr/share/nginx/html/review/$CI_BUILD_REF_NAME"
+    when: manual
+    environment:
+        name: review/$CI_BUILD_REF_NAME
+        action: stop
+    only:
+        - branches
+    tags:
+        - development
+    except:
+        - master
+        
+deploy:
+    stage: deploy
+    only:
+        - master
+    tags:
+        - production
+    script:
+        - sshpass -p "$SSH_PASSWD" ssh -p "$SSH_PORT" $SSH_USER@fizban.rz.tu-harburg.de "mkdir -p /usr/share/nginx/html/production"
+        - sshpass -p "$SSH_PASSWD" scp -P "$SSH_PORT" -r _book/* $SSH_USER@fizban.rz.tu-harburg.de:/usr/share/nginx/html/production
+    environment:
+        name: production
+        url: http://fizban.rz.tu-harburg.de:56080/production/
+    when: manual
