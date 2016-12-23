@@ -26,6 +26,7 @@
 * [Fr, 02.12.2016](sitzungen/05-Fr-2016-12-02.md)
 * [Fr, 09.12.2016](sitzungen/06-Fr-2016-12-09.md)
 * [Fr, 16.12.2016](sitzungen/07-Fr-2016-12-16.md)
+* [Fr, 23.12.2016](sitzungen/08-Fr-2016-12-23.md)
 
 ---
 
@@ -34,7 +35,10 @@
 * [Webtechnologien](material/webtechnologien.md)
     * [HTML5](material/html5.md)
     * [CSS3](material/css3.md)
-* [Atom](material/atom.md)
+    * [Analyse Datenverkehr](material/analyse-client-server.md)
+* [Atom](material/atom/atom.md)
+    * [Packages](material/atom/packages.md)
+* [Linux-Quickstart](material/linux.md)
 
 ## Literatur
 

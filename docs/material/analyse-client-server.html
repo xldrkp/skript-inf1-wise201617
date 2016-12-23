@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Atom · GitBook</title>
+        <title>Analyse Datenverkehr · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -59,7 +59,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="buecher.html" />
+    <link rel="next" href="atom/atom.html" />
     
     
     <link rel="prev" href="css3.html" />
@@ -422,6 +422,21 @@
             
         </li>
     
+        <li class="chapter " data-level="3.8" data-path="../sitzungen/08-Fr-2016-12-23.html">
+            
+                <a href="../sitzungen/08-Fr-2016-12-23.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    Fr, 23.12.2016
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -475,19 +490,70 @@
             
         </li>
     
+        <li class="chapter active" data-level="4.1.3" data-path="analyse-client-server.html">
+            
+                <a href="analyse-client-server.html">
+            
+                    
+                        <b>4.1.3.</b>
+                    
+                    Analyse Datenverkehr
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
         </li>
     
-        <li class="chapter active" data-level="4.2" data-path="atom.html">
+        <li class="chapter " data-level="4.2" data-path="atom/atom.html">
             
-                <a href="atom.html">
+                <a href="atom/atom.html">
             
                     
                         <b>4.2.</b>
                     
                     Atom
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="atom/packages.html">
+            
+                <a href="atom/packages.html">
+            
+                    
+                        <b>4.2.1.</b>
+                    
+                    Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="linux.html">
+            
+                <a href="linux.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Linux-Quickstart
             
                 </a>
             
@@ -547,7 +613,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Atom</a>
+        <a href=".." >Analyse Datenverkehr</a>
     </h1>
 </div>
 
@@ -562,21 +628,33 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="atom">Atom</h1>
-<h2 id="packages">Packages</h2>
-<p>Packages erweitern die Funktionalit&#xE4;t von Atom in unterschiedlichsten Bereichen. Im folgenden sind die Packages aufgef&#xFC;hrt, die im Kontext der Veranstaltung besprochen und konfiguriert wurden.</p>
-<p>Den Bereich zur <strong>Installation</strong> von Packages wird ge&#xF6;ffnet &#xFC;ber <code>Edit -&gt; Preferences -&gt; Install</code>.</p>
-<p>Den Bereich zur <strong>Konfiguration</strong> von Packages wird ge&#xF6;ffnet &#xFC;ber <code>Edit -&gt; Preferences -&gt; Packages</code>.</p>
-<h3 id="autosave">Autosave</h3>
-<p><strong>Quelle:</strong> Core Package</p>
-<p><strong>Zweck:</strong> Speichert die ge&#xF6;ffnete Datei automatisch</p>
-<p><strong>Konfiguration:</strong> Es gibt eine sinnvolle Funktion von autosave, die per Default deaktiviert ist: Sie speichert automatisch den Stand der aktiven Datei in Atom, wenn das Fenster verlassen wird. So spart man sich das manuelle Speichern, wenn man bei der Webentwicklung in den Browser umschaltet.</p>
-<p><strong>Zugang:</strong> Eingeschaltet wird diese Funktion &#xFC;ber <code>Settings -&gt; Packages -&gt; autosave -&gt; Settings -&gt; Enabled (nach unten scrollen)</code></p>
-<h3 id="pigments">Pigments</h3>
-<p><strong>Quelle:</strong> <a href="https://atom.io/packages/pigments" target="_blank">https://atom.io/packages/pigments</a></p>
-<p><strong>Zweck:</strong> Legt Farben auf Farbangaben im CSS</p>
-<figure id="fig4.2.1"><img src="../assets/pigments-sample.png" alt="Beispiel"><figcaption>Abbildung 4.2.1 - Beispiel</figcaption></figure>
-<p><strong>Konfiguration:</strong> Nach der Installation funktioniert das Package wie gew&#xFC;nscht.</p>
+                                <h1 id="analyse-der-kommunikation-zwischen-client-und-server">Analyse der Kommunikation zwischen Client und Server</h1>
+<p>Im folgenden Beispiel wird beschrieben, wie man die Kommunikation zwischen dem Browser auf dem Clientrechner und der Webserversoftware sichtbar machen und analysieren kann.</p>
+<h2 id="voraussetzungen">Voraussetzungen</h2>
+<ul>
+<li>Nutzung von Google Chrome oder Chromium in einer aktuellen Version (im Beispiel Version 49.0.2623.108 Built on Ubuntu 14.04, running on LinuxMint 17.3 (64-bit))</li>
+<li>Server mit Python und dem Modul <code>SimpleHTTPServer</code> (im Beispiel Raspberry Pi mit Raspian Debian Jessie)</li>
+<li>Hosting einer mittelkomplexen Website auf dem Server (im Beispiel die Seite <em>Secondhandblumen Petersen</em>, frei verf&#xFC;gbar unter <a href="https://github.com/xldrkp/secondhandblumen" target="_blank">https://github.com/xldrkp/secondhandblumen</a>)</li>
+</ul>
+<figure id="fig4.1.3.1"><img src="abb/fensteranordnung-netzwerkanalyse.png" alt="Sinnvolle Anordnung von Fenstern zur Analyse des Netzwerkverkehrs"><figcaption>Abbildung 4.1.3.1 - Sinnvolle Anordnung von Fenstern zur Analyse des Netzwerkverkehrs</figcaption></figure>
+<h2 id="ablauf-des-experiments">Ablauf des Experiments</h2>
+<p>Das Experiment wird von Bob und Alice durchgef&#xFC;hrt.</p>
+<p>Mit einer Anwendung wie PuTTY oder dem Terminal verbindet sich Alice per SSH mit dem Server (vgl. Abb. 1, (3)). Dort navigiert sie in den Ordner, der die Website hostet und startet den Server.</p>
+<p>Im Browser ruft Bob nun die Adresse auf, unter der die Website zu erreichen ist. Sofern er erfolgreich ist, schaltet er die <em>Entwicklertools</em> dazu, erreichbar &#xFC;ber das Burgermen&#xFC; des Chrome-Browsers oder die Tastenkombination <code>STRG+SHIFT+I</code> oder die Funktionstaste <code>F12</code>. Standardm&#xE4;&#xDF;ig wird die Ansicht der Entwicklertools unten angezeigt (vgl. Abb. 1, (2)).</p>
+<p>Bob wechselt anschlie&#xDF;end in den Tab &quot;Netzwerk&quot; und ruft mit <code>F5</code> erneut die Website im Browser auf. In der Folge k&#xF6;nnen Bob und Alice den Netzwerkverkehr zwischen Client und Server beobachten (vgl. (2) und (3)). Der Server schreibt sein Logfile direkt ins Terminal und zeigt damit an, welche Befehle er &#xFC;ber HTTP empf&#xE4;ngt. Die Statuscodes zeigen an, wie er die Anfrage (Request) behandelt und ob er dem anfragenden Client eine Antwort (Response) geben kann.</p>
+<p>Das Navigieren in der Website zeitigt weiteren Netzwerkverkehr.</p>
+<h2 id="erweiterung-des-experiments">Erweiterung des Experiments</h2>
+<p>Alice schl&#xE4;gt vor, sich den <em>Server Roundtrip</em> genauer anzusehen. Bob fragt, was sie damit meint. Alice erkl&#xE4;rt: Der Server Roundtrip wird auch <em>Request-Response-Cycle</em> genannt. Beides bedeutet im Grunde dasselbe, n&#xE4;mlich dass der Client eine Anfrage an den Server stellt und dieser eine Antwort gibt - Request, Response. Dieser Trip wird oftmals wiederholt, weil nicht nur die HTML-Seite vom Server geholt werden muss, sondern auch alle Resourcen, die darin eingebunden sind, also Bilder, CSS, JavaScript und andere Daten. Die Entwicklertools des Browsers geben genaueren Einblick in die Kommunikation, wenn man eine Resource anklickt.</p>
+<p>Bob navigiert auf die Homepage, aktualisiert die Browseransicht und klickt anschlie&#xDF;end auf <code>index.html</code> im Netzwerktab (vgl. Abb. 2, (1)).</p>
+<figure id="fig4.1.3.2"><img src="abb/auswahl.png" alt="Auswahl der Datei index.html im Netzwerktab"><figcaption>Abbildung 4.1.3.2 - Auswahl der Datei index.html im Netzwerktab</figcaption></figure>
+<p>Die folgende Ansicht zeigt die Daten, die bei Request und Response jeweils am Kopfende der HTTP-Kommunikation mitgeschickt wurden. Sie werden daher auch im Tab <em>Headers</em> angezeigt. Im Bereich (1) kann die Datei ausgew&#xE4;hlt werden, die vom Server abgerufen werden soll. F&#xFC;r die Seite <code>index.html</code> werden insgesamt vier Requests gestellt, wie (2) zeigt. Bereich (3) zeigt generelle Informationen zu der Anfrage. (4) zeigt Informationen zur Antwort des Servers, (5) listet Daten auf, die mit dem Request zum Server geschickt wurden. Hinter <em>view source</em> (6) verbirgt sich ein Umschalter, der die Daten nochmal in Rohform anzeigt.</p>
+<figure id="fig4.1.3.3"><img src="abb/anzeige-headers.png" alt="Anzeige der Header-Daten aus Request und Response"><figcaption>Abbildung 4.1.3.3 - Anzeige der Header-Daten aus Request und Response</figcaption></figure>
+<p>Klicks auf andere Dateien in (1) bringen andere Informationen in (3-6) hervor.</p>
+<h2 id="fragen-und-aufgaben">Fragen und Aufgaben</h2>
+<ul>
+<li>Welche HTTP-Statuscodes gibt es? Tragen Sie bitte unter diesem Aufz&#xE4;hlungspunkt einige einschl&#xE4;gige Quellen zusammen!</li>
+<li>F&#xFC;llen Sie das Formular Ihrer Website aus. Schicken Sie es ab. Was passiert? Finden Sie heraus, wie Sie in den Entwicklertools die &#xFC;bertragenen Formulardaten auf dem Weg zum Server sehen k&#xF6;nnen!</li>
+</ul>
 
                                 
                                 </section>
@@ -609,7 +687,7 @@
                 </a>
                 
                 
-                <a href="buecher.html" class="navigation navigation-next " aria-label="Next page: Bücher">
+                <a href="atom/atom.html" class="navigation navigation-next " aria-label="Next page: Atom">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -620,7 +698,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Atom","level":"4.2","depth":1,"next":{"title":"Bücher","level":"5.1","depth":1,"path":"material/buecher.md","ref":"material/buecher.md","articles":[]},"previous":{"title":"CSS3","level":"4.1.2","depth":2,"path":"material/css3.md","ref":"material/css3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","-sharing","forkmegithub","downloadpdf","youtube","livereload"],"styles":{"website":"./styles/website.css","pdf":"./styles/pdf.css"},"pluginsConfig":{"youtube":{},"livereload":{},"search":{},"downloadpdf":{"label":"Download PDF","multilingual":false,"base":"https://github.com/xldrkp/skript-inf1-wise201617/blob/master/book.pdf"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"forkmegithub":{"color":"red","url":"https://github.com/xldrkp/skript-inf1-wise201617"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"image-captions":{"caption":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"voraussetzungen/github-account.html#fig2.3.1","level":"2.3","list_caption":"Figure: Wie heißt dieses Tier?","alt":"Wie heißt dieses Tier?","nro":1,"url":"../assets/maskottchen.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Wie heißt dieses Tier?","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"sitzungen/02-Sa-2016-11-05.html#fig3.2.1","level":"3.2","list_caption":"Figure: Markup des Kopfteils eines HTML5-Dokuments","alt":"Markup des Kopfteils eines HTML5-Dokuments","nro":2,"url":"../assets/html5-markup.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Markup des Kopfteils eines HTML5-Dokuments","attributes":{},"skip":false,"key":"3.2.1"},{"backlink":"sitzungen/03-Fr-2016-11-18.html#fig3.3.1","level":"3.3","list_caption":"Figure: Absolut notwendig: Verständliche Navigationselemente auf Websites","alt":"Absolut notwendig: Verständliche Navigationselemente auf Websites","nro":3,"url":"/assets/wind-rose-1209398_1280.jpg","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Absolut notwendig: Verständliche Navigationselemente auf Websites","attributes":{},"skip":false,"key":"3.3.1"},{"backlink":"material/html5.html#fig4.1.1.1","level":"4.1.1","list_caption":"Figure: Offizielles HTML5-Logo","alt":"Offizielles HTML5-Logo","nro":4,"url":"https://www.w3.org/html/logo/downloads/HTML5_Badge_128.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Offizielles HTML5-Logo","attributes":{},"skip":false,"key":"4.1.1.1"},{"backlink":"material/atom.html#fig4.2.1","level":"4.2","list_caption":"Figure: Beispiel","alt":"Beispiel","nro":5,"url":"../assets/pigments-sample.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Beispiel","attributes":{},"skip":false,"key":"4.2.1"},{"backlink":"material/buecher.html#fig5.1.1","level":"5.1","list_caption":"Figure: A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","alt":"A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","nro":6,"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/A_tower_of_used_books_-_8449.jpg/512px-A_tower_of_used_books_-_8449.jpg","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","attributes":{},"skip":false,"key":"5.1.1"}]},"language":"de","gitbook":"*"},"file":{"path":"material/atom.md","mtime":"2016-11-08T08:35:57.202Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-22T12:13:29.806Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Analyse Datenverkehr","level":"4.1.3","depth":2,"next":{"title":"Atom","level":"4.2","depth":1,"path":"material/atom/atom.md","ref":"material/atom/atom.md","articles":[{"title":"Packages","level":"4.2.1","depth":2,"path":"material/atom/packages.md","ref":"material/atom/packages.md","articles":[]}]},"previous":{"title":"CSS3","level":"4.1.2","depth":2,"path":"material/css3.md","ref":"material/css3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["image-captions","-sharing","forkmegithub","downloadpdf","youtube"],"styles":{"website":"./styles/website.css","pdf":"./styles/pdf.css"},"pluginsConfig":{"youtube":{},"search":{},"downloadpdf":{"label":"Download PDF","multilingual":false,"base":"https://github.com/xldrkp/skript-inf1-wise201617/blob/master/book.pdf"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"forkmegithub":{"color":"red","url":"https://github.com/xldrkp/skript-inf1-wise201617"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"image-captions":{"caption":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"voraussetzungen/github-account.html#fig2.3.1","level":"2.3","list_caption":"Figure: Wie heißt dieses Tier?","alt":"Wie heißt dieses Tier?","nro":1,"url":"../assets/maskottchen.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Wie heißt dieses Tier?","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"sitzungen/02-Sa-2016-11-05.html#fig3.2.1","level":"3.2","list_caption":"Figure: Markup des Kopfteils eines HTML5-Dokuments","alt":"Markup des Kopfteils eines HTML5-Dokuments","nro":2,"url":"../assets/html5-markup.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Markup des Kopfteils eines HTML5-Dokuments","attributes":{},"skip":false,"key":"3.2.1"},{"backlink":"sitzungen/03-Fr-2016-11-18.html#fig3.3.1","level":"3.3","list_caption":"Figure: Absolut notwendig: Verständliche Navigationselemente auf Websites","alt":"Absolut notwendig: Verständliche Navigationselemente auf Websites","nro":3,"url":"/assets/wind-rose-1209398_1280.jpg","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Absolut notwendig: Verständliche Navigationselemente auf Websites","attributes":{},"skip":false,"key":"3.3.1"},{"backlink":"material/html5.html#fig4.1.1.1","level":"4.1.1","list_caption":"Figure: Offizielles HTML5-Logo","alt":"Offizielles HTML5-Logo","nro":4,"url":"https://www.w3.org/html/logo/downloads/HTML5_Badge_128.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Offizielles HTML5-Logo","attributes":{},"skip":false,"key":"4.1.1.1"},{"backlink":"material/analyse-client-server.html#fig4.1.3.1","level":"4.1.3","list_caption":"Figure: Sinnvolle Anordnung von Fenstern zur Analyse des Netzwerkverkehrs","alt":"Sinnvolle Anordnung von Fenstern zur Analyse des Netzwerkverkehrs","nro":5,"url":"./abb/fensteranordnung-netzwerkanalyse.png","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Sinnvolle Anordnung von Fenstern zur Analyse des Netzwerkverkehrs","attributes":{},"skip":false,"key":"4.1.3.1"},{"backlink":"material/analyse-client-server.html#fig4.1.3.2","level":"4.1.3","list_caption":"Figure: Auswahl der Datei index.html im Netzwerktab","alt":"Auswahl der Datei index.html im Netzwerktab","nro":6,"url":"./abb/auswahl.png","index":2,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Auswahl der Datei index.html im Netzwerktab","attributes":{},"skip":false,"key":"4.1.3.2"},{"backlink":"material/analyse-client-server.html#fig4.1.3.3","level":"4.1.3","list_caption":"Figure: Anzeige der Header-Daten aus Request und Response","alt":"Anzeige der Header-Daten aus Request und Response","nro":7,"url":"./abb/anzeige-headers.png","index":3,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"Anzeige der Header-Daten aus Request und Response","attributes":{},"skip":false,"key":"4.1.3.3"},{"backlink":"material/buecher.html#fig5.1.1","level":"5.1","list_caption":"Figure: A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","alt":"A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","nro":8,"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/A_tower_of_used_books_-_8449.jpg/512px-A_tower_of_used_books_-_8449.jpg","index":1,"caption_template":"Abbildung _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_","label":"A Tower of Used Books (© Jorge Royan / http://www.royan.com.ar / CC BY-SA 3.0) ","attributes":{},"skip":false,"key":"5.1.1"}]},"language":"de","gitbook":"*"},"file":{"path":"material/analyse-client-server.md","mtime":"2016-12-23T07:34:51.021Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-23T07:35:41.045Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -635,10 +713,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-downloadpdf/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
