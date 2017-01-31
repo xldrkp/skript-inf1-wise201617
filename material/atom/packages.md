@@ -4,16 +4,16 @@ Packages erweitern die Funktionalität von Atom in unterschiedlichsten Bereichen
 
 <!-- toc orderedList:0 depthFrom:1 depthTo:6 -->
 
-- [Packages](#packages)
-	- [Autosave](#autosave)
-	- [Pigments](#pigments)
-	- [remote-sync](#remote-sync)
-		- [Lokal arbeiten, per SSH hochladen](#lokal-arbeiten-per-ssh-hochladen)
-		- [Installation des Packages *remote-sync*](#installation-des-packages-remote-sync)
-		- [Konfiguration von *remote-sync*](#konfiguration-von-remote-sync)
-		- [Die Konfigurationsdatei `remote-sync.json` erstellen](#die-konfigurationsdatei-remote-syncjson-erstellen)
-		- [Konfiguration testen](#konfiguration-testen)
-		- [Tipps](#tipps)
+* [Packages](#packages)
+	* [Autosave](#autosave)
+	* [Pigments](#pigments)
+	* [remote-sync](#remote-sync)
+		* [Lokal arbeiten, per SSH hochladen](#lokal-arbeiten-per-ssh-hochladen)
+		* [Installation des Packages *remote-sync*](#installation-des-packages-remote-sync)
+		* [Konfiguration von *remote-sync*](#konfiguration-von-remote-sync)
+		* [Die Konfigurationsdatei `remote-sync.json` erstellen](#die-konfigurationsdatei-remote-syncjson-erstellen)
+		* [Konfiguration testen](#konfiguration-testen)
+		* [Tipps](#tipps)
 
 <!-- tocstop -->
 
