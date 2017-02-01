@@ -4,6 +4,8 @@ Veranstaltungsziele und -inhalte richten sich in dieser Veranstaltung nach den [
 
 Dort sind zum einen Qualifikationsziele angegeben, die sich über die beiden Veranstaltungen *Einführung in die Informatik* erstrecken. Außerdem finden sich dort Inhalte, aus denen abgelesen werden kann, in welcher Breite und Tiefe Informatik im Bezug auf das Studienziel *Gewerbelehramt* behandelt werden wird.
 
+
+
 ## Auftrag
 
 Beschäftigen Sie sich mit den FSB insofern, als dass Sie
