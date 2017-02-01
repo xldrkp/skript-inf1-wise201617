@@ -18,7 +18,7 @@ Um die Prüfungsvorbereitung zu erleichtern, werden die in der Veranstaltung beh
 
 * Aus den folgenden Themengebieten werden im Fachgespräch zu gleichen Teilen Fragen gestellt.
 * Die Teilnehmenden können vorher angeben, in welchem der Bereiche sie meinen, sich am besten auszukennen.
-* In den von Ihnen genannten Teilbereichen werden dementsprechend speziellere Fragen gestellt, in den anderen Bereichen allgemeinere.
+* In den von Ihnen genannten Teilgebiete werden dementsprechend speziellere Fragen gestellt, in den anderen Gebieten allgemeinere.
 
 ##### I. HTML und CSS
 
