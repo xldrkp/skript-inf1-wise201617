@@ -42,7 +42,7 @@ Um die Prüfungsvorbereitung zu erleichtern, werden die in der Veranstaltung beh
 -   Grundlagen Netzwerke
 -   Browser und die Chrome Developer Tools
 -   Raspberry Pi und Webhoster
--   Grundlagen Kommandozeilebild
+-   Grundlagen Kommandozeile
 -   Protokolle FTP, SSH, SFTP und HTTP
 -   Der eigene Rechner
 
@@ -54,7 +54,6 @@ Um die Prüfungsvorbereitung zu erleichtern, werden die in der Veranstaltung beh
 -   Chancen und Gefahren des Internets
 -   Trends und Zukunftsperspektiven des Internets für Unterricht und
     Schule
--   Selbstlernstrategien und Recherchemöglichkeiten
 
 ### Studienleistung
 
