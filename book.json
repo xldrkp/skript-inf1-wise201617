@@ -1,7 +1,7 @@
 {
   "language": "de",
   "plugins": [
-    "image-captions", "-sharing", "forkmegithub", "downloadpdf", "youtube"
+    "image-captions", "-sharing", "forkmegithub", "downloadpdf", "youtube", "fancybox"
   ],
   "pluginsConfig": {
     "theme-default": {
